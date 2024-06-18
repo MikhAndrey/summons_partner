@@ -6,11 +6,13 @@ function Main() {
         <div className="App-main">
             <Header></Header>
             <div className="App-main-label">
-                <div className="App-main-label-primary">
-                    Get the ultimate
-                </div>
-                <div className="App-main-label-primary">
-                    all-in-one solution
+                <div>
+                    <div className="App-main-label-primary">
+                        Get the ultimate
+                    </div>
+                    <div className="App-main-label-primary">
+                        all-in-one solution
+                    </div>
                 </div>
                 <div className="App-main-label-secondary">
                     for police officers in New York State.

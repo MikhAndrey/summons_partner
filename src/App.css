@@ -55,6 +55,7 @@
   text-align: center;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .App-header-menu-start-button {
@@ -75,6 +76,9 @@
   position: absolute;
   top: 240px;
   left: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
 }
 
 .App-main-label-primary {
@@ -159,4 +163,68 @@
   height: 100%;
   width: 100%;
   border-radius: 68px;
+}
+
+.App-howitworks-description-container {
+  position: absolute;
+  top: 1150px;
+  left: 190px;
+  padding: 144px 0 144px 0;
+  width: 352px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.App-howitworks-description-header {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #05245C;
+}
+
+.App-howitworks-description-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #161C2D;
+}
+
+.App-howitworks-item-container {
+  position: absolute;
+  top: 1150px;
+  left: 718px;
+  padding: 0 0 144px 0;
+  width: 1012px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 44px;
+}
+
+.App-howitworks-about-item {
+  border-radius: 68px;
+  padding: 64px;
+  background-color: #F1F3F7;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.App-howitworks-about-item-image {
+  width: 64px;
+  height: 64px;
+}
+
+.App-howitworks-about-item-name {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38.25px;
+  color: #05245C;
+}
+
+.App-howitworks-about-item-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #161C2D;
 }

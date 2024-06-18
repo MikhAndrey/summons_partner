@@ -1,4 +1,5 @@
 import React from "react";
+import {scrollToSection} from "./helpers";
 
 function Header() {
     return (
@@ -9,7 +10,10 @@ function Header() {
             </div>
             <div className="App-header-menu">
                 <div className="App-header-menu-items">
-                    <a href="#" className="App-header-menu-item">How it works</a>
+                    <a 
+                        onClick={(e) => scrollToSection(e, 'howItWorks')} 
+                        className="App-header-menu-item"
+                    >How it works</a>
                     <a href="#" className="App-header-menu-item">Features</a>
                     <a href="#" className="App-header-menu-item">Reviews</a>
                     <a href="#" className="App-header-menu-item">Help</a>

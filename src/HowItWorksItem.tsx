@@ -1,16 +1,18 @@
-export interface AboutItemProps {
+export interface HowItWorksItemProps {
     name: string,
     description: string
 }
 
-function AboutItem(props: AboutItemProps) {
+function HowItWorksItem(props: HowItWorksItemProps) {
     return (
         <div className="App-howitworks-about-item">
-            <img src="./calendar.png" className="App-howitworks-about-item-image"/>
+            <div className="App-howitworks-calendar-wrapper">
+                <img src="./calendar.png" className="App-howitworks-calendar"/>
+            </div>
             <div className="App-howitworks-about-item-name">{props.name}</div>
             <div className="App-howitworks-about-item-description">{props.description}</div>
         </div>
     );
 }
 
-export default AboutItem;
+export default HowItWorksItem;

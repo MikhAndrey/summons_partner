@@ -3,17 +3,14 @@
   color: white;
 }
 
-.App-main {
-  height: 866px;
-  width: 100%;
-  background-color: #05245C;
+.App-container {
+  margin-left: 190px;
 }
 
 .App-header {
-  position: absolute;
   width: 1620px;
-  top: 40px;
-  left: 112px;
+  margin-top: 40px;
+  margin-left: 112px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,19 +69,38 @@
   border: none;
 }
 
-.App-main-label {
+.App-main-back {
   position: absolute;
-  top: 240px;
-  left: 190px;
+  top: 0;
+  left: 0;
+  z-index: -999999;
+  height: 866px;
+  width: 100%;
+  background-color: #05245C;
+}
+
+.App-main-wrapper {
+  margin-top: 106px;
+  position: relative;
+}
+
+.App-main-inner-wrapper {
+  display: inline-flex;
+}
+
+.App-main-label {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 44px;
+  margin-bottom: 144px;
 }
 
 .App-main-label-primary {
   font-weight: 800;
   font-size: 108px;
   line-height: 100px;
+  letter-spacing: -2px;
 }
 
 .App-main-label-secondary {
@@ -94,24 +110,42 @@
   opacity: 0.8;
 }
 
-.App-main-mobile-screen-container {
+.App-main-mobile-screen-outer-container {
   position: absolute;
-  top: 210px;
-  left: 1248px;
+  top: 0;
+  left: 1058px;
   width: 308px;
   height: 656px;
   z-index: 999999;
 }
 
-.App-main-mobile-screen-image {
-  height: 100%;
-  width: 100%;
+.App-main-mobile-screen-inner-container {
+  position: relative;
+  width: 308px;
+  height: 656px;
+  border: 3.9px solid #27262E;
+  border-radius: 42px;
+  overflow: hidden;
+}
+
+.App-mobile-screen-image {
+  position: absolute;
+  height: 648px;
+  width: 301px;
+  top: 4px;
+  left: 3px;
+}
+
+.App-mobile-screen-mask {
+  position: absolute;
+  height: 656px;
+  width: 308px;
+  background-color: white;
+  top: 0;
+  left: 0;
 }
 
 .App-main-city-image-outer-container {
-  position: absolute;
-  top: 626px;
-  left: 190px;
   width: 1542px;
   height: 480px;
 }
@@ -153,8 +187,8 @@
 
 .App-qr-code-image-container {
   position: absolute;
-  top: 800px;
-  left: 1764px;
+  top: 590px;
+  left: 1574px;
   width: 124px;
   height: 124px;
 }
@@ -166,14 +200,12 @@
 }
 
 .App-howitworks-description-container {
-  position: absolute;
-  top: 1150px;
-  left: 190px;
   padding: 144px 0 144px 0;
   width: 352px;
   display: flex;
   flex-direction: column;
   gap: 88px;
+  margin-right: 176px;
 }
 
 .App-howitworks-description-header {
@@ -181,6 +213,7 @@
   font-size: 64px;
   line-height: 64px;
   color: #05245C;
+  letter-spacing: -2px;
 }
 
 .App-howitworks-description-text {
@@ -190,10 +223,7 @@
   color: #161C2D;
 }
 
-.App-howitworks-item-container {
-  position: absolute;
-  top: 1150px;
-  left: 718px;
+.App-howitworks-items-container {
   padding: 0 0 144px 0;
   width: 1012px;
   display: grid;
@@ -210,9 +240,19 @@
   gap: 44px;
 }
 
-.App-howitworks-about-item-image {
+.App-howitworks-calendar {
+  width: 32px;
+  height: 32px;
+}
+
+.App-howitworks-calendar-wrapper {
   width: 64px;
   height: 64px;
+  border-radius: 24px;
+  background-color: #1452A9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-howitworks-about-item-name {
@@ -227,4 +267,182 @@
   font-size: 18px;
   line-height: 32px;
   color: #161C2D;
+}
+
+#howItWorks {
+  position: relative;
+  margin-top: 44px;
+  display: inline-flex;
+}
+
+.App-features-city-image {
+  border-radius: 68px;
+  width: 1542px;
+  height: 680px;
+}
+
+#features {
+  position: relative;
+}
+
+.App-features-mobile-screen-outer-container {
+  position: absolute;
+  top: -83px;
+  left: 174px;
+  width: 308px;
+  height: 656px;
+  z-index: 999999;
+}
+
+.App-features-mobile-screen-inner-container {
+  position: relative;
+  width: 308px;
+  height: 656px;
+  border: 3.9px solid #27262E;
+  border-radius: 42px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.App-features-label-wrapper {
+  position: absolute;
+  top: 137px;
+  left: 792px;
+  width: 485px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.App-features-label {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.App-features-label-image {
+  height: 64px;
+  width: 64px;
+}
+
+.App-features-label-name {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+
+.App-features-label-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.8;
+}
+
+.App-features-label-arrows {
+  width: 79px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App-features-label-arrow-left, .App-features-label-arrow-right {
+  width: 15px;
+  height: 14px;
+  border: 2px;
+}
+
+.App-features-label-arrow-right {
+  transform: rotate(180deg);
+}
+
+.App-features-main-content {
+  position: absolute;
+  top: 340px;
+  left: -190px;
+  padding-left: 190px;
+  width: 100%;
+  background-color: #1452A9;
+  z-index: -99999;
+}
+
+.App-features-item {
+  border-radius: 68px;
+  padding: 64px 64px 0 64px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.App-features-calendar {
+  width: 32px;
+  height: 32px;
+}
+
+.App-features-calendar-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  background-color: #FF4B00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-howitworks-calendar-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  background-color: #1452A9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-features-item-name {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38.25px;
+  color: #05245C;
+}
+
+.App-features-item-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #161C2D;
+}
+
+.App-features-items-container {
+  margin-top: 384px;
+  padding: 0 0 144px 0;
+  width: 1540px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+}
+
+.App-features-item-image-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 412px;
+  overflow-y: hidden;
+}
+
+.App-features-item-mobile-screen-outer-container {
+  width: 308px;
+  height: 656px;
+  z-index: 999999;
+}
+
+.App-features-item-mobile-screen-inner-container {
+  position: relative;
+  width: 308px;
+  height: 656px;
+  border: 3.9px solid #27262E;
+  border-radius: 42px;
+  overflow: hidden;
+  box-sizing: border-box;
 }

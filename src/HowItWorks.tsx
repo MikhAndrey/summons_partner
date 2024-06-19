@@ -1,9 +1,9 @@
 import React from "react";
-import AboutItem, {AboutItemProps} from "./AboutItem";
+import HowItWorksItem, {HowItWorksItemProps} from "./HowItWorksItem";
 
 
 function HowItWorks() {
-    const howItWorksContent: AboutItemProps[] = [
+    const howItWorksContent: HowItWorksItemProps[] = [
         {name: "NYS Penal Law", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
         {name: "NYPD Patrol Guide", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
         {name: "Most common TPO", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
@@ -20,9 +20,9 @@ function HowItWorks() {
                     specifically for NYPD officers.
                 </div>
             </div>
-            <div className="App-howitworks-item-container">
+            <div className="App-howitworks-items-container">
                 {howItWorksContent.map(el => (
-                    <AboutItem name={el.name} description={el.description}></AboutItem>
+                    <HowItWorksItem name={el.name} description={el.description}></HowItWorksItem>
                 ))}
             </div>
         </div>

@@ -3,8 +3,7 @@ import React from "react";
 
 function Main() {
     return (
-        <div className="App-main">
-            <Header></Header>
+        <div className="App-main-wrapper">
             <div className="App-main-label">
                 <div>
                     <div className="App-main-label-primary">
@@ -18,8 +17,11 @@ function Main() {
                     for police officers in New York State.
                 </div>
             </div>
-            <div className="App-main-mobile-screen-container">
-                <img className="App-main-mobile-screen-image" src="./summons_mobile_screen.png" alt="Mobile screen"/>
+            <div className="App-main-mobile-screen-outer-container">
+                <div className="App-main-mobile-screen-inner-container">
+                    <div className="App-mobile-screen-mask"></div>
+                    <img className="App-mobile-screen-image" src="./mobile_screen_main.png" alt="Mobile screen"/>
+                </div>
             </div>
             <div className="App-main-city-image-outer-container">
                 <div className="App-main-city-image-inner-container">

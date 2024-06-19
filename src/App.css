@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   font-family: "Manrope", sans-serif;
   color: white;
@@ -358,11 +363,10 @@
 }
 
 .App-features-main-content {
-  position: absolute;
-  top: 340px;
-  left: -190px;
-  padding-left: 190px;
-  width: 100%;
+  margin-top: -340px;
+  margin-left: -190px;
+  padding-top: 384px;
+  width: calc(100% + 190px);
   background-color: #1452A9;
   z-index: -99999;
 }
@@ -416,7 +420,7 @@
 }
 
 .App-features-items-container {
-  margin-top: 384px;
+  margin-left: 190px;
   padding: 0 0 144px 0;
   width: 1540px;
   display: grid;
@@ -445,4 +449,62 @@
   border-radius: 42px;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.App-common-info-container-wrapper {
+  margin-left: -190px;
+  width: calc(100% + 190px);
+  display: flex;
+  justify-content: center;
+}
+
+.App-common-info-container {
+  width: 995px;
+  padding: 144px 0 144px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.App-common-info-header {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #05245C;
+}
+
+.App-common-info-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #161C2D;
+}
+
+.App-common-info-statistics-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-common-info-statistics-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.App-common-info-statistics-value {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #05245C;
+}
+
+.App-common-info-statistics-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FF4B00;
 }

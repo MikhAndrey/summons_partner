@@ -4,6 +4,7 @@ import Main from "./Main";
 import HowItWorks from "./HowItWorks";
 import Features from "./Features";
 import Header from "./Header";
+import CommonInfo from "./CommonInfo";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Main></Main>
             <HowItWorks></HowItWorks>
             <Features></Features>
+            <CommonInfo></CommonInfo>
         </div>
     </div>
   );

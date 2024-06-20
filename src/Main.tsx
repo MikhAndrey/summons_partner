@@ -1,4 +1,3 @@
-import Header from "./Header";
 import React from "react";
 
 function Main() {
@@ -13,7 +12,7 @@ function Main() {
                         all-in-one solution
                     </div>
                 </div>
-                <div className="App-main-label-secondary">
+                <div className="main-label-description">
                     for police officers in New York State.
                 </div>
             </div>
@@ -26,8 +25,8 @@ function Main() {
             <div className="App-main-city-image-outer-container">
                 <div className="App-main-city-image-inner-container">
                     <div className="App-main-app-download">
-                        <span className="App-main-app-download-label color-orange">Download the App</span>
-                        <img className="App-main-app-download-icon color-orange" src="./app_download.png" alt="Download app"/>
+                        <span className="App-ref-link-label color-orange">Download the App</span>
+                        <img className="App-ref-link-icon color-orange" src="./ref_link_icon.png" alt="Download app"/>
                     </div>
                 </div>
                 <img className="App-main-city-image" src="./city_image.png" alt="City image"/>

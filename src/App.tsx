@@ -5,6 +5,7 @@ import HowItWorks from "./HowItWorks";
 import Features from "./Features";
 import Header from "./Header";
 import CommonInfo from "./CommonInfo";
+import Reviews from "./Reviews";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <HowItWorks></HowItWorks>
             <Features></Features>
             <CommonInfo></CommonInfo>
+            <Reviews></Reviews>
         </div>
     </div>
   );

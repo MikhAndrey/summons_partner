@@ -143,7 +143,7 @@
   letter-spacing: -2px;
 }
 
-.App-main-label-secondary {
+.main-label-description {
   font-weight: 300;
   font-size: 28px;
   line-height: 32px;
@@ -212,23 +212,25 @@
   background-color: white;
 }
 
-.App-main-app-download-label {
+.App-ref-link-label {
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
 }
 
-.App-main-app-download-icon {
+.App-ref-link-icon {
   width: 44px;
   height: 44px;
 }
 
 .App-qr-code-image-container {
-  position: absolute;
-  top: 590px;
-  left: 1574px;
+  position: fixed;
+  /*TODO: discuss the exact top value for qr code*/
+  top: calc(100vh - 130px);
+  left: 1764px;
   width: 124px;
   height: 124px;
+  z-index: 1000000;
 }
 
 .App-qr-code-image {
@@ -457,4 +459,84 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.App-reviews-container {
+  margin-left: -190px;
+  width: calc(100% + 190px);
+  height: 1024px;
+  display: inline-flex;
+}
+
+.App-reviews-info {
+  margin-left: 190px;
+  padding: 144px 0 144px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.App-reviews-label {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.App-reviews-button {
+  display: flex;
+  gap: 12px;
+}
+
+.App-reviews-content {
+  padding-top: 144px;
+  /*TODO: discuss the exact value of margin-left*/
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.App-review-item {
+  position: relative;
+  width: 748px;
+}
+
+.App-review-rating-container {
+  position: absolute;
+  left: 64px;
+  border-radius: 200px;
+  padding: 8px 12px 8px 12px;
+  z-index: 999999;
+  display: flex;
+}
+
+.App-review-rating-star {
+  width: 24px;
+  height: 24px;
+}
+
+.App-review-text-container {
+  margin-top: 20px;
+  padding: 64px;
+  background-color: white;
+  box-shadow: 20px 40px 60px 0 rgba(5,36,92,0.15);
+  /*TODO: discuss the exact value of border-radius*/
+  border-radius: 20px;
+}
+
+.App-review-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.App-review-avatar-wrapper {
+  padding: 0 28px 0 28px;
+}
+
+.App-review-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 62px;
+  /*TODO: remove it from here after making rounded bottom-left corner of text container*/
+  margin-top: 17px;
 }

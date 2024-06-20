@@ -516,12 +516,22 @@
 }
 
 .App-review-text-container {
+  position: relative;
   margin-top: 20px;
   padding: 64px;
   background-color: white;
   box-shadow: 20px 40px 60px 0 rgba(5,36,92,0.15);
-  /*TODO: discuss the exact value of border-radius*/
-  border-radius: 20px;
+  border-radius: 24px 24px 24px 0;
+}
+
+.App-review-text-container-corner {
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  background-color: white;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
 }
 
 .App-review-text {

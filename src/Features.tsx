@@ -31,9 +31,11 @@ function Features() {
             </div>
             <div className="App-features-label-wrapper">
                 <div className="App-features-label">
-                    <img className="App-features-label-image" src="./home.png" alt="Home"/>
-                    <div className="App-features-label-name">Summonses</div>
-                    <div className="App-features-label-description">
+                    <div className="App-icon-wrapper back-orange">
+                        <img src="./home.png" className="App-icon"/>
+                    </div>
+                    <div className="header-text">Summonses</div>
+                    <div className="description-text">
                         With our app, you can access a comprehensive reference
                         guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime
                     </div>
@@ -43,7 +45,7 @@ function Features() {
                     <img className="App-features-label-arrow-right" src="./arrow.png" alt="Arrow right"/>
                 </div>
             </div>
-            <div className="App-features-main-content">
+            <div className="App-features-main-content back-light-blue">
                 <div className="App-features-items-container">
                     {featuresItemsContent.map(el => (
                         <FeaturesItem name={el.name} description={el.description} imageLink={el.imageLink}></FeaturesItem>

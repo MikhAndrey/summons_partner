@@ -12,6 +12,43 @@
   margin-left: 190px;
 }
 
+.description-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.header-text {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+
+.color-orange {
+  color: #FF4B00;
+}
+
+.color-night-blue {
+  color: #161C2D;
+}
+
+.color-dark-blue {
+  color: #05245C;
+}
+
+.back-orange {
+  background-color: #FF4B00;
+}
+
+.back-light-blue {
+  background-color: #1452A9;
+}
+
+.back-dark-blue {
+  background-color: #05245C;
+}
+
 .App-header {
   width: 1620px;
   margin-top: 40px;
@@ -65,7 +102,6 @@
   height: 44px;
   padding: 12px;
   border-radius: 100px;
-  background-color: #FF4B00;
   color: inherit;
   font-weight: 800;
   font-size: 15px;
@@ -81,7 +117,6 @@
   z-index: -999999;
   height: 866px;
   width: 100%;
-  background-color: #05245C;
 }
 
 .App-main-wrapper {
@@ -181,13 +216,11 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
-  color: #FF4B00;
 }
 
 .App-main-app-download-icon {
   width: 44px;
   height: 44px;
-  color: #FF4B00;
 }
 
 .App-qr-code-image-container {
@@ -213,21 +246,6 @@
   margin-right: 176px;
 }
 
-.App-howitworks-description-header {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 64px;
-  color: #05245C;
-  letter-spacing: -2px;
-}
-
-.App-howitworks-description-text {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #161C2D;
-}
-
 .App-howitworks-items-container {
   padding: 0 0 144px 0;
   width: 1012px;
@@ -245,16 +263,15 @@
   gap: 44px;
 }
 
-.App-howitworks-calendar {
+.App-icon {
   width: 32px;
   height: 32px;
 }
 
-.App-howitworks-calendar-wrapper {
+.App-icon-wrapper {
   width: 64px;
   height: 64px;
   border-radius: 24px;
-  background-color: #1452A9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,14 +281,6 @@
   font-weight: 800;
   font-size: 28px;
   line-height: 38.25px;
-  color: #05245C;
-}
-
-.App-howitworks-about-item-description {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #161C2D;
 }
 
 #howItWorks {
@@ -325,22 +334,7 @@
   gap: 44px;
 }
 
-.App-features-label-image {
-  height: 64px;
-  width: 64px;
-}
-
-.App-features-label-name {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: -2px;
-}
-
 .App-features-label-description {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
   opacity: 0.8;
 }
 
@@ -367,7 +361,6 @@
   margin-left: -190px;
   padding-top: 384px;
   width: calc(100% + 190px);
-  background-color: #1452A9;
   z-index: -99999;
 }
 
@@ -385,21 +378,10 @@
   height: 32px;
 }
 
-.App-features-calendar-wrapper {
-  width: 64px;
-  height: 64px;
-  border-radius: 24px;
-  background-color: #FF4B00;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .App-howitworks-calendar-wrapper {
   width: 64px;
   height: 64px;
   border-radius: 24px;
-  background-color: #1452A9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -409,14 +391,6 @@
   font-weight: 800;
   font-size: 28px;
   line-height: 38.25px;
-  color: #05245C;
-}
-
-.App-features-item-description {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #161C2D;
 }
 
 .App-features-items-container {
@@ -467,20 +441,11 @@
 }
 
 .App-common-info-header {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: -2px;
   text-align: center;
-  color: #05245C;
 }
 
 .App-common-info-description {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
   text-align: center;
-  color: #161C2D;
 }
 
 .App-common-info-statistics-container {
@@ -492,19 +457,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.App-common-info-statistics-value {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #05245C;
-}
-
-.App-common-info-statistics-description {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #FF4B00;
 }

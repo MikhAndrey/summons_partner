@@ -9,7 +9,7 @@ import CommonInfo from "./CommonInfo";
 function App() {
   return (
     <div className="App">
-        <div className="App-main-back"></div>
+        <div className="App-main-back back-dark-blue"></div>
         <Header></Header>
         <div className="App-container">
             <Main></Main>

@@ -23,7 +23,7 @@ function Header() {
                     <a href="#" className="App-header-menu-item">Contacts</a>
                 </div>
                 <div>
-                    <button className="App-header-menu-start-button">Get started free</button>
+                    <button className="App-header-menu-start-button back-orange">Get started free</button>
                 </div>
             </div>
         </div>

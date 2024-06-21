@@ -22,27 +22,31 @@ function Features() {
     
     return (
         <div id="features">
-            <img className="App-features-city-image" src="./city_image_blue.png" alt="City image"/>
-            <div className="App-features-mobile-screen-outer-container">
-                <div className="App-features-mobile-screen-inner-container">
-                    <div className="App-mobile-screen-mask"></div>
-                    <img className="App-mobile-screen-image" src="./mobile_screen_features.png" alt="Mobile screen"/>
-                </div>
+            <div className="App-features-city-image-wrapper">
+                <img className="App-features-city-image" src="./city_image_blue.png" alt="City image"/>
             </div>
-            <div className="App-features-label-wrapper">
-                <div className="App-features-label">
-                    <div className="App-icon-wrapper back-orange">
-                        <img src="./home.png" className="App-icon"/>
-                    </div>
-                    <div className="header-text">Summonses</div>
-                    <div className="description-text App-features-label-description">
-                        With our app, you can access a comprehensive reference
-                        guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime
+            <div className="App-features-content-container">
+                <div className="App-features-mobile-screen-outer-container">
+                    <div className="App-features-mobile-screen-inner-container">
+                        <div className="App-mobile-screen-mask"></div>
+                        <img className="App-mobile-screen-image" src="./mobile_screen_features.png" alt="Mobile screen"/>
                     </div>
                 </div>
-                <div className="App-features-label-arrows">
-                    <img className="App-features-label-arrow-left" src="./arrow.png" alt="Arrow left"/>
-                    <img className="App-features-label-arrow-right" src="./arrow.png" alt="Arrow right"/>
+                <div className="App-features-label-wrapper">
+                    <div className="App-features-label">
+                        <div className="App-icon-wrapper back-orange">
+                            <img src="./home.png" className="App-icon"/>
+                        </div>
+                        <div className="header-text">Summonses</div>
+                        <div className="description-text App-features-label-description">
+                            With our app, you can access a comprehensive reference
+                            guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime
+                        </div>
+                    </div>
+                    <div className="App-features-label-arrows">
+                        <img className="App-features-label-arrow-left" src="./arrow.png" alt="Arrow left"/>
+                        <img className="App-features-label-arrow-right" src="./arrow.png" alt="Arrow right"/>
+                    </div>
                 </div>
             </div>
             <div className="App-features-main-content back-light-blue">

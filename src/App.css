@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+.App-howitworks-items-container::-webkit-scrollbar-thumb {
+  background: #05245C;
+  border-radius: 10px;
+}
+
+.App-features-items-container::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
 .App {
   font-family: "Manrope", sans-serif;
   color: white;
@@ -10,6 +24,9 @@
 
 .App-container {
   margin-left: 190px;
+  @media (max-width: 768px) {
+    margin-left: 12px;
+  }
 }
 
 .description-text {
@@ -23,6 +40,10 @@
   font-size: 64px;
   line-height: 64px;
   letter-spacing: -2px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .color-orange {
@@ -64,6 +85,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+    width: 100%;
+  }
 }
 
 .App-header-logo {
@@ -76,6 +103,9 @@
   align-items: center;
   gap: 12px;
   width: 192px;
+  @media (max-width: 768px) {
+    width: 133px;
+  }
 }
 
 .App-header-name-label {
@@ -125,11 +155,16 @@
   z-index: -999999;
   height: 866px;
   width: 100%;
+  @media (max-width: 768px) {
+    height: 640px;
+  }
 }
 
 .App-main-wrapper {
-  margin-top: 106px;
-  position: relative;
+  margin-top: 136px;
+  @media (max-width: 768px) {
+    margin-top: 68px;
+  }
 }
 
 .App-main-inner-wrapper {
@@ -137,11 +172,16 @@
 }
 
 .App-main-label {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 44px;
   margin-bottom: 144px;
+  width: 949px;
+  @media (max-width: 768px) {
+    width: calc(100vw - 56px);
+    margin-left: 16px;
+    margin-bottom: 44px;
+  }
 }
 
 .App-main-label-primary {
@@ -149,6 +189,10 @@
   font-size: 108px;
   line-height: 100px;
   letter-spacing: -2px;
+  @media (max-width: 768px) {
+    font-size: 44px;
+    line-height: 44px;
+  }
 }
 
 .main-label-description {
@@ -159,12 +203,18 @@
 }
 
 .App-main-mobile-screen-outer-container {
-  position: absolute;
-  top: 0;
-  left: 1058px;
+  margin-top: -896px;
+  margin-left: 1058px;
   width: 308px;
   height: 656px;
   z-index: 999999;
+  @media (max-width: 768px) {
+    margin-top: -352px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 225.37px;
+    height: 480px;
+  }
 }
 
 .App-main-mobile-screen-inner-container {
@@ -174,6 +224,12 @@
   border: 3.9px solid #27262E;
   border-radius: 42px;
   overflow: hidden;
+  @media (max-width: 768px) {
+    width: 225.37px;
+    height: 480px;
+    border: 2.86px solid #27262E;
+    border-radius: 30.73px;
+  }
 }
 
 .App-mobile-screen-image {
@@ -182,6 +238,12 @@
   width: 301px;
   top: 4px;
   left: 3px;
+  @media (max-width: 768px) {
+    width: 220.24px;
+    height: 474.15px;
+    top: 2.93px;
+    left: 2.2px;
+  }
 }
 
 .App-mobile-screen-mask {
@@ -193,9 +255,22 @@
   left: 0;
 }
 
-.App-main-city-image-outer-container {
+.App-main-content-container {
   width: 1542px;
+  min-height: 480px;
+  @media (max-width: 768px) {
+    width: calc(100vw - 24px);
+  }
+}
+
+.App-main-city-image-outer-container {
+  width: 100%;
   height: 480px;
+  border-radius: 68px;
+  @media (max-width: 768px) {
+    overflow: hidden;
+    border-radius: 44px;
+  }
 }
 
 .App-main-city-image-inner-container {
@@ -204,8 +279,7 @@
 
 .App-main-city-image {
   height: 100%;
-  width: 100%;
-  border-radius: 68px;
+  width: auto;
 }
 
 .App-main-app-download {
@@ -218,12 +292,16 @@
   align-items: center;
   gap: 12px;
   background-color: white;
+  @media (max-width: 768px) {
+    border-radius: 44px 0 44px 0;
+    padding: 8px 28px 8px 28px;
+  }
 }
 
 .App-ref-link-label {
   font-weight: 600;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .App-ref-link-icon {
@@ -235,10 +313,13 @@
   position: fixed;
   /*TODO: discuss the exact top value for qr code*/
   top: calc(100vh - 130px);
-  left: 1764px;
+  left: calc(100vw - 156px);
   width: 124px;
   height: 124px;
   z-index: 1000000;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .App-qr-code-image {
@@ -253,7 +334,24 @@
   display: flex;
   flex-direction: column;
   gap: 88px;
-  margin-right: 176px;
+  @media (max-width: 768px) {
+    padding: 68px 28px 68px 28px;
+    gap: 44px;
+    align-items: center;
+    min-width: calc(100vw - 56px);
+  }
+}
+
+.App-howitworks-description-header {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.App-howitworks-description-text {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .App-howitworks-items-container {
@@ -262,6 +360,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 44px;
+  @media (max-width: 768px) {
+    margin-left: 12px;
+    display: flex;
+    gap: 12px;
+    width: calc(100vw - 12px);
+    overflow-x: scroll;
+    padding: 0 0 28px 0;
+    margin-bottom: 136px;
+  }
 }
 
 .App-howitworks-about-item {
@@ -271,6 +378,12 @@
   display: flex;
   flex-direction: column;
   gap: 44px;
+  @media (max-width: 768px) {
+    border-radius: 44px;
+    padding: 28px 28px 44px 28px;
+    gap: 28px;
+    min-width: calc(100vw - 95px);
+  }
 }
 
 .App-icon {
@@ -296,26 +409,55 @@
 #howItWorks {
   position: relative;
   margin-top: 44px;
-  display: inline-flex;
+  display: flex;
+  gap: 176px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+    margin-left: -12px;
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+.App-features-content-container {
+  display: flex;
+  gap: 310px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .App-features-city-image {
-  border-radius: 68px;
-  width: 1542px;
-  height: 680px;
+  height: 100%;
+  width: auto;
 }
 
-#features {
-  position: relative;
+.App-features-city-image-wrapper {
+  border-radius:68px;
+  width: 1542px;
+  height: 680px;
+  @media (max-width: 768px) {
+    height: 886px;
+    border-radius: 44px;
+    overflow: hidden;
+    width: calc(100vw - 24px);
+  }
 }
 
 .App-features-mobile-screen-outer-container {
-  position: absolute;
-  top: -83px;
-  left: 174px;
+  margin-top: -763px;
+  margin-left: 174px;
   width: 308px;
   height: 656px;
   z-index: 999999;
+  @media (max-width: 768px) {
+    margin-top: -946px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 225.37px;
+    height: 480px;
+  }
 }
 
 .App-features-mobile-screen-inner-container {
@@ -326,22 +468,35 @@
   border-radius: 42px;
   overflow: hidden;
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    width: 225.37px;
+    height: 480px;
+    border: 2.86px solid #27262E;
+    border-radius: 30.73px;
+  }
 }
 
 .App-features-label-wrapper {
-  position: absolute;
-  top: 137px;
-  left: 792px;
+  margin-top: -563px;
   width: 485px;
   display: flex;
   flex-direction: column;
   gap: 88px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+    padding: 44px 28px 44px 28px;
+    gap: 44px;
+    width: auto;
+  }
 }
 
 .App-features-label {
   display: flex;
   flex-direction: column;
   gap: 44px;
+  @media (max-width: 768px) {
+    gap: 28px;
+  }
 }
 
 .App-features-label-description {
@@ -369,9 +524,15 @@
 .App-features-main-content {
   margin-top: -340px;
   margin-left: -190px;
-  padding-top: 384px;
+  padding-top: 458px;
   width: calc(100% + 190px);
   z-index: -99999;
+  @media (max-width: 768px) {
+    margin-top: -440px;
+    margin-left: -12px;
+    width: calc(100% + 12px);
+    padding-bottom: 68px;
+  }
 }
 
 .App-features-item {
@@ -381,6 +542,12 @@
   display: flex;
   flex-direction: column;
   gap: 44px;
+  @media (max-width: 768px) {
+    border-radius: 44px;
+    padding: 44px 28px 0 28px;
+    gap: 44px;
+    min-width: calc(100vw - 95px);
+  }
 }
 
 .App-features-calendar {
@@ -410,6 +577,23 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 44px;
+  @media (max-width: 768px) {
+    margin-left: 12px;
+    display: flex;
+    gap: 12px;
+    width: calc(100vw - 12px);
+    overflow-x: scroll;
+    padding: 0 0 28px 0;
+  }
+}
+
+.App-features-item-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  @media (max-width: 768px) {
+    gap: 28px;
+  }
 }
 
 .App-features-item-image-wrapper {
@@ -417,12 +601,19 @@
   justify-content: center;
   height: 412px;
   overflow-y: hidden;
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 }
 
 .App-features-item-mobile-screen-outer-container {
   width: 308px;
   height: 656px;
   z-index: 999999;
+  @media (max-width: 768px) {
+    width: 225.37px;
+    height: 480px;
+  }
 }
 
 .App-features-item-mobile-screen-inner-container {
@@ -433,6 +624,12 @@
   border-radius: 42px;
   overflow: hidden;
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    width: 225.37px;
+    height: 480px;
+    border: 2.86px solid #27262E;
+    border-radius: 30.73px;
+  }
 }
 
 .App-common-info-container-wrapper {
@@ -440,6 +637,10 @@
   width: calc(100% + 190px);
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    margin-left: -12px;
+    width: calc(100% + 12px);
+  }
 }
 
 .App-common-info-container {
@@ -448,6 +649,11 @@
   display: flex;
   flex-direction: column;
   gap: 88px;
+  @media (max-width: 768px) {
+    width: calc(100vw - 56px);
+    padding: 68px 28px 68px 28px;
+    gap: 44px;
+  }
 }
 
 .App-common-info-header {
@@ -461,6 +667,11 @@
 .App-common-info-statistics-container {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 44px;
+  }
 }
 
 .App-common-info-statistics-item {
@@ -492,6 +703,7 @@
 
 .App-reviews-button {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 

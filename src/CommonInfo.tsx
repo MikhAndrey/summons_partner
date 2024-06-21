@@ -5,8 +5,7 @@ function CommonInfo() {
         <div className="App-common-info-container-wrapper">
             <div className="App-common-info-container">
                 <div>
-                    <div className="header-text App-common-info-header color-dark-blue">Get the ultimate</div>
-                    <div className="header-text App-common-info-header color-dark-blue">all-in-one solution</div>
+                    <div className="header-text App-common-info-header color-dark-blue">Get the ultimate all-in-one solution</div>
                 </div>
                 <div className="description-text App-common-info-description color-night-blue">
                     With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. 

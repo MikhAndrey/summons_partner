@@ -28,7 +28,7 @@ function StartWork() {
                 </div>
             </div>
             <div className="App-start-work-phone-image-container">
-                <img className="App-start-work-phone-image" src="./get_app_phone.png"/>
+                <img className="App-start-work-phone-image image-shadow" src="./get_app_phone.png"/>
             </div>
             <div className="App-start-work-car-image-container">
                 <img className="App-start-work-car-image" src="./police_car.png"/>

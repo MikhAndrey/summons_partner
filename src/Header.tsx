@@ -22,8 +22,14 @@ function Header() {
                         onClick={(e) => scrollToSection(e, 'reviews')}
                         className="App-header-menu-item"
                     >Reviews</a>
-                    <a href="#" className="App-header-menu-item">Help</a>
-                    <a href="#" className="App-header-menu-item">Contacts</a>
+                    <a
+                        onClick={(e) => scrollToSection(e, 'help')}
+                        className="App-header-menu-item"
+                    >Help</a>
+                    <a
+                        onClick={(e) => scrollToSection(e, 'contacts')}
+                        className="App-header-menu-item"
+                    >Contacts</a>
                 </div>
                 <div>
                     <button className="App-header-menu-start-button back-orange">Get started free</button>

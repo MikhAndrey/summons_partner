@@ -524,6 +524,7 @@
 }
 
 .App-features-main-content {
+  display: flex;
   margin-top: -340px;
   margin-left: -190px;
   padding-top: 458px;
@@ -686,7 +687,15 @@
   margin-left: -190px;
   width: calc(100% + 190px);
   height: 1024px;
-  display: inline-flex;
+  display: flex;
+  @media (max-width: 768px) {
+    padding: 68px 28px 68px 28px;
+    flex-direction: column;
+    gap: 44px;
+    width: calc(100vw - 56px);
+    margin-left: -12px;
+    height: auto;
+  }
 }
 
 .App-reviews-info {
@@ -695,12 +704,19 @@
   display: flex;
   flex-direction: column;
   gap: 88px;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin-left: 0;
+  }
 }
 
 .App-reviews-label {
   display: flex;
   flex-direction: column;
   gap: 44px;
+  @media (max-width: 768px) {
+    gap: 28px;
+  }
 }
 
 .App-reviews-button {
@@ -716,11 +732,19 @@
   display: flex;
   flex-direction: column;
   gap: 88px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+    padding-top: 0;
+    gap: 44px;
+  }
 }
 
 .App-review-item {
   position: relative;
   width: 748px;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .App-review-rating-container {
@@ -730,6 +754,11 @@
   padding: 8px 12px 8px 12px;
   z-index: 999999;
   display: flex;
+  width: fit-content;
+  @media (max-width: 768px) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .App-review-rating-star {
@@ -738,12 +767,18 @@
 }
 
 .App-review-text-container {
-  position: relative;  
+  position: relative;
   margin-top: 20px;
   padding: 64px;
   background-color: white;
   box-shadow: 20px 40px 60px 0 rgba(5,36,92,0.15);
   border-radius: 24px 24px 24px 0;
+  display: flex;
+  @media (max-width: 768px) {
+    padding: 44px 28px 44px 28px;
+    max-width: 100%;
+    margin-top: 0;
+  }
 }
 
 .App-review-text-container-corner {

@@ -31,15 +31,15 @@ function Reviews() {
                             <div className="main-label-description">their experience with our app!</div>
                         </div>
                     </div>
+                    <div className="App-reviews-content">
+                        {reviewItems.map(el => (
+                            <ReviewItem text={el.text} rating={el.rating} avatarLink={el.avatarLink}></ReviewItem>
+                        ))}
+                    </div>
                     <div className="App-reviews-button">
                         <span className="App-ref-link-label color-orange">Show more</span>
                         <img className="App-ref-link-icon color-orange" src="./ref_link_icon.png" alt="More"/>
                     </div>
-                </div>
-                <div className="App-reviews-content">
-                    {reviewItems.map(el => (
-                        <ReviewItem text={el.text} rating={el.rating} avatarLink={el.avatarLink}></ReviewItem>
-                    ))}
                 </div>
             </div>
         </div>

@@ -172,6 +172,7 @@
   background-color: transparent;
   width: 24px;
   height: 24px;
+  border: none;
 }
 
 .burger-menu-items {
@@ -377,7 +378,7 @@
     padding: 68px 28px 68px 28px;
     gap: 44px;
     align-items: center;
-    min-width: calc(100vw - 56px);
+    width: calc(100vw - 56px);
   }
 }
 

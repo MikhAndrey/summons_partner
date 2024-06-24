@@ -27,7 +27,7 @@ function Features() {
             </div>
             <div className="App-features-content-container">
                 <div className="App-features-mobile-screen-outer-container">
-                    <div className="App-features-mobile-screen-inner-container">
+                    <div className="App-features-mobile-screen-inner-container image-shadow">
                         <div className="App-mobile-screen-mask"></div>
                         <img className="App-mobile-screen-image" src="./mobile_screen_features.png" alt="Mobile screen"/>
                     </div>

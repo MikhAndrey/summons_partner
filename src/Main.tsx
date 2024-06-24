@@ -24,7 +24,7 @@ function Main() {
                     <img className="App-main-city-image" src="./city_image.png" alt="City image"/>
                 </div>
                 <div className="App-main-mobile-screen-outer-container">
-                    <div className="App-main-mobile-screen-inner-container">
+                    <div className="App-main-mobile-screen-inner-container image-shadow">
                         <div className="App-mobile-screen-mask"></div>
                         <img className="App-mobile-screen-image" src="./mobile_screen_main.png" alt="Mobile screen"/>
                     </div>

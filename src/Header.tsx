@@ -1,5 +1,6 @@
 import React from "react";
 import {scrollToSection} from "./helpers";
+import BurgerMenu from "./BurgerMenu";
 
 function Header() {
     return (
@@ -34,6 +35,7 @@ function Header() {
                 <div>
                     <button className="App-header-menu-start-button back-orange">Get started free</button>
                 </div>
+                <BurgerMenu/>
             </div>
         </div>
     );

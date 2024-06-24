@@ -5,8 +5,12 @@ export interface HelpProps {
 function HelpItem(props: HelpProps) {
     return (
         <div className="App-help-item color-black">
-            { props.header }
-            <button className="App-help-item-button back-orange color-white">+</button>
+            <div>
+                { props.header }
+            </div>
+            <div>
+                <button className="App-help-item-button"/>
+            </div>
         </div>  
     )
 }

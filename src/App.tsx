@@ -14,19 +14,19 @@ import Contacts from './Contacts';
 function App() {
   return (
     <div className="App">
-        <div className="App-main-back back-dark-blue"></div>
-        <Header></Header>
+        {/* <div className="App-main-back back-dark-blue"></div> */}
+        {/* <Header></Header> */}
         <div className="App-container">
-            <Main></Main>
+            {/* <Main></Main>
             <HowItWorks></HowItWorks>
             <Features></Features>
-            <CommonInfo></CommonInfo>
-            <Reviews></Reviews>
+            <CommonInfo></CommonInfo> */}
+            {/* <Reviews></Reviews> */}
             <Help/>
             <StartWork/>
             <Contacts/>
         </div>
-        <Footer/>
+        <Footer/> 
     </div>
   );
 }

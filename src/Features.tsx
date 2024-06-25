@@ -24,6 +24,7 @@ function Features() {
         <div id="features">
             <div className="App-features-city-image-wrapper">
                 <img className="App-features-city-image" src="./city_image_blue.png" alt="City image"/>
+                <img className="App-features-city-image-mobile" src="./city_image_blue_mobile.png" alt="City image"/>
             </div>
             <div className="App-features-content-container">
                 <div className="App-features-mobile-screen-outer-container">

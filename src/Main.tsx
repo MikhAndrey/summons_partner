@@ -22,6 +22,7 @@ function Main() {
                         </div>
                     </div>
                     <img className="App-main-city-image" src="./city_image.png" alt="City image"/>
+                    <img className="App-main-city-image-mobile" src="./city_image_mobile.png" alt="City image"/>
                 </div>
                 <div className="App-main-mobile-screen-outer-container">
                     <div className="App-main-mobile-screen-inner-container image-shadow">

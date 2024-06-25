@@ -313,7 +313,16 @@
   width: 100%;
   border-radius: 68px;
   @media (max-width: 768px) {
-    overflow: hidden;
+    display: none;
+  }
+}
+
+.App-main-city-image-mobile {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    height: 100%;
+    width: 100%;
     border-radius: 44px;
   }
 }
@@ -473,7 +482,16 @@
   width: 100%;
   border-radius: 68px;
   @media (max-width: 768px) {
-    overflow: hidden;
+    display: none;
+  }
+}
+
+.App-features-city-image-mobile {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    height: 100%;
+    width: 100%;
     border-radius: 44px;
   }
 }

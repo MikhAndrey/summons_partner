@@ -881,6 +881,8 @@
 .App-help {
   margin-top: 300px;
   height: 700px;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-help-header {
@@ -1019,7 +1021,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .header-text {
     font-size: 40px;
     line-height: 40px;
@@ -1034,9 +1036,10 @@
   }
 
   .App-help {
-    margin-top: 70px;
-    height: 700px;
-    margin-bottom: 250px;
+    margin-top: 270px;
+    height: 900px;
+    align-items: center;
+    margin-bottom: 50px;
   }
 
   .App-help-header {
@@ -1053,7 +1056,11 @@
 
   .App-start-work {
     height: 650px;
-    padding: 40px 0 0 190px;
+    padding: 20px 0 0 55%;
+  }
+
+  .App-start-work-header {
+    margin-top: 30px;
   }
 
   .App-start-work-desciption {
@@ -1078,7 +1085,7 @@
     width: 220px;
     height: 474px;
     top: 555px;
-    left: 230px;
+    left: 62vw;
   }
   
   .App-start-work-phone-image {
@@ -1092,7 +1099,7 @@
   .App-start-work-car-image-container {
     width: 350px;
     top: 430px;
-    left: 170px;
+    left: 52vw;
   }
 
   .App-start-work-car-image {
@@ -1122,5 +1129,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start; 
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .App-start-work-car-image-container {
+    left: 46vw;
   }
 }

@@ -4,10 +4,10 @@ import HowItWorksItem, {HowItWorksItemProps} from "./HowItWorksItem";
 
 function HowItWorks() {
     const howItWorksContent: HowItWorksItemProps[] = [
-        {name: "NYS Penal Law", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
-        {name: "NYPD Patrol Guide", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
-        {name: "Most common TPO", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
-        {name: "Department Phone Book", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "}
+        {id: 1, name: "NYS Penal Law", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
+        {id: 2, name: "NYPD Patrol Guide", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
+        {id: 3, name: "Most common TPO", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "},
+        {id: 4, name: "Department Phone Book", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "}
     ];
     
     return (
@@ -22,7 +22,7 @@ function HowItWorks() {
             </div>
             <div className="App-howitworks-items-container">
                 {howItWorksContent.map(el => (
-                    <HowItWorksItem name={el.name} description={el.description}></HowItWorksItem>
+                    <HowItWorksItem key={el.id} id={el.id} name={el.name} description={el.description}></HowItWorksItem>
                 ))}
             </div>
         </div>

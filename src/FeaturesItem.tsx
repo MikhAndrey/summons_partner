@@ -1,9 +1,10 @@
 import React from "react";
 
 export interface FeaturesProps {
-    name: string,
-    description: string,
-    imageLink: string
+    id: number;
+    name: string;
+    description: string;
+    imageLink: string;
 }
 
 function FeaturesItem(props: FeaturesProps) {

@@ -93,6 +93,16 @@
   }
 }
 
+.App-header-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #05245C;
+  z-index: 999999;
+}
+
 .App-header-logo {
   height: 64px;
   width: 64px;
@@ -106,6 +116,16 @@
   @media (max-width: 768px) {
     width: 133px;
   }
+}
+
+.App-header-info-overlay {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 133px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
 }
 
 .App-header-name-label {
@@ -160,7 +180,6 @@
 
 .burger-menu {
   display: none;
-  position: relative;
   @media screen and (max-width: 768px) {
     display: block;
   }
@@ -175,13 +194,29 @@
   border: none;
 }
 
+.close-menu-button {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  background-image: url("../public/close_menu_button.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+  z-index: 1000000;
+}
+
 .burger-menu-items {
   position: absolute;
-  top: 40px;
-  left: -36px;
+  top: 120px;
+  left: 64px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
+  font-size: 20px;
+  line-height: 20px;
+  z-index: 1000000;
 }
 
 .App-main-back {

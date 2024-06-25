@@ -4,16 +4,19 @@ import FeaturesItem, {FeaturesProps} from "./FeaturesItem";
 function Features() {
     const featuresItemsContent: FeaturesProps[] = [
         {
+            id: 1,
             name: "RDO Calendar", 
             description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime ",
             imageLink: "./mobile_screen_rdo_calendar.png"
         },
         {
+            id: 2,
             name: "Overtime Calculator", 
             description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime ",
             imageLink: "./mobile_screen_overtime_calculator.png"
         },
         {
+            id: 3,
             name: "Overtime History", 
             description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime ",
             imageLink: "./mobile_screen_overtime_history.png"
@@ -53,7 +56,13 @@ function Features() {
             <div className="App-features-main-content back-light-blue">
                 <div className="App-features-items-container">
                     {featuresItemsContent.map(el => (
-                        <FeaturesItem name={el.name} description={el.description} imageLink={el.imageLink}></FeaturesItem>
+                        <FeaturesItem 
+                            key={el.id} 
+                            id={el.id} 
+                            name={el.name} 
+                            description={el.description} 
+                            imageLink={el.imageLink}
+                        ></FeaturesItem>
                     ))}
                 </div>
             </div>

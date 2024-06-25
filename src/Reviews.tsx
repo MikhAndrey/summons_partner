@@ -4,12 +4,14 @@ import ReviewItem, {ReviewProps} from "./ReviewItem";
 function Reviews() {
     const reviewItems: ReviewProps[] = [
         {
+            id: 1,
             rating: 5,
             text: "If you’re on patrol, you need this app. It includes all the violations needed for all the summonses, and you can save the ones you use the most for easier access. Furthermore, it has TPO narratives when are very important to have, especially for those who are just starting their career. The reference section is useful.\n" +
                 "You can have your rdo calendar, pay day, and vacation picks all within the same app too. My most favorite, is definitely the OT calculator, this app makes it very easy to keep track of your ot in a very organized manner.",
             avatarLink: "./user_avatar1.png"
         },
         {
+            id: 2,
             rating: 5,
             text: "I have been using this app for over half a year and I can honestly say that this app has everything you need when you are on patrol. Whether is looking up violation codes or how to write a story that spells out the crime, it has everything you need. The overtime add on is worth the extra money. It is very easy to use and has everything you need to stay on top of your money.\n" +
                 "This app is very user friendly and there are no glitches whatsoever. The creator works hard to constantly update and make changes.",
@@ -33,7 +35,13 @@ function Reviews() {
                     </div>
                     <div className="App-reviews-content">
                         {reviewItems.map(el => (
-                            <ReviewItem text={el.text} rating={el.rating} avatarLink={el.avatarLink}></ReviewItem>
+                            <ReviewItem 
+                                key={el.id} 
+                                id={el.id} 
+                                text={el.text} 
+                                rating={el.rating} 
+                                avatarLink={el.avatarLink}
+                            ></ReviewItem>
                         ))}
                     </div>
                     <div className="App-reviews-button">

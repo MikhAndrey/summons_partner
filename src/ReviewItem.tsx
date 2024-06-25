@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface ReviewProps {
+    id: number;
     rating: number;
     text: string;
     avatarLink: string;

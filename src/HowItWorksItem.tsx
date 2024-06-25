@@ -1,6 +1,7 @@
 export interface HowItWorksItemProps {
-    name: string,
-    description: string
+    id: number;
+    name: string;
+    description: string;
 }
 
 function HowItWorksItem(props: HowItWorksItemProps) {

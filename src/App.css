@@ -1022,7 +1022,6 @@
 .App-start-work-phone-image-container {
   outline: #FF6745 solid 4px;
   border-radius: 42px;
-  width: 300px;
   height: 645px;
   position: absolute;
   top: 200px;
@@ -1046,7 +1045,6 @@
 }
 
 .App-start-work-car-image-container {
-  width: 1540px;
   height: 480px;
   position: absolute;
   top: 700px;

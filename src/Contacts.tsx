@@ -1,11 +1,12 @@
 interface Contact {
+    id: number,
     contact: string
 }
 
 function Contacts() {
     const ContactsData: Contact[] = [
-        { contact: 'summonspartner@gmail.com' },
-        { contact: '+1-394-3439-1435' }
+        { id: 1, contact: 'summonspartner@gmail.com' },
+        { id: 2, contact: '+1-394-3439-1435' }
     ]
 
     return (
@@ -15,7 +16,7 @@ function Contacts() {
             </div>
             <div className="App-contacts-links-container">
                 { ContactsData.map(el => 
-                    <div className="App-contacts-link color-dark-blue">{ el.contact }</div>
+                    <div key={ el.id } className="App-contacts-link color-dark-blue">{ el.contact }</div>
                 ) }
             </div>
         </div>

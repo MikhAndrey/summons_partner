@@ -932,8 +932,7 @@
 }
 
 .App-help {
-  margin-top: 300px;
-  height: 700px;
+  margin-top: 250px;  
   display: flex;
   flex-direction: column;
 }
@@ -943,24 +942,34 @@
 }
 
 .App-help-view {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  columns: 2;
   margin: 30px 0 30px 0;
 }
 
 .App-help-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
-  width: 730px;
+  flex-direction: column;
+  align-items: stretch;
   font-weight: 700;
   font-size: 18px;
   border: #EEEEEE solid 2px;
   border-left: 0px;
   border-right: 0px;
-  padding: 0 8px 0 8px;
-  margin-top: -2px;
+  padding: 30px 8px 30px 8px;
+  margin: -2px 50px 0 0;
+  break-inside: avoid-column;
+}
+
+.App-help-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-help-item-details {
+  margin-top: 25px;
+  font-weight: 300;
+  color: #161C2D;
 }
 
 .App-help-item-button {
@@ -972,7 +981,13 @@
   margin-top: 5px;
 }
 
+.App-help-item-button.close-button {
+  opacity: 30%;
+  background-image: url('../public/subtract_icon.png');
+}
+
 .App-start-work {
+  margin-top: 120px;
   height: 809px;
   margin-left: -190px;
   padding: 150px 0 0 190px;
@@ -1080,26 +1095,25 @@
   }
 
   .App-help {
-    margin-top: 270px;
-    height: 900px;
-    align-items: center;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 0 10px 0 10px;
   }
 
   .App-help-header {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .App-help-view {
-    grid-template-columns: repeat(1, 1fr);
+    columns: 1;
   }
 
   .App-help-item {
-    width: 320px;
+    margin-right: 0;
   }
 
   .App-start-work {
     height: 650px;
+    margin-top: 40px;
     padding: 20px 0 0 55%;
   }
 
@@ -1129,7 +1143,7 @@
     width: 220px;
     height: 474px;
     top: 555px;
-    left: 62vw;
+    left: 63vw;
   }
   
   .App-start-work-phone-image {
@@ -1141,9 +1155,8 @@
   }
 
   .App-start-work-car-image-container {
-    width: 350px;
     top: 430px;
-    left: 52vw;
+    left: calc(60vw - 45px);
   }
 
   .App-start-work-car-image {
@@ -1152,6 +1165,7 @@
   
   .App-start-work-car-image-mobile {
     display: block;
+    width: 350px;
   }
 
   .App-contacts {
@@ -1173,11 +1187,5 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start; 
-  }
-}
-
-@media screen and (max-width: 485px) {
-  .App-start-work-car-image-container {
-    left: 46vw;
   }
 }

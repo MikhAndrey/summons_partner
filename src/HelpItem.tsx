@@ -16,7 +16,7 @@ function HelpItem(props: HelpProps) {
     return (
         <div className="App-help-item color-black">
             <div className="App-help-item-header">
-                <div>
+                <div className="App-help-item-header-text">
                     { props.header }
                 </div>
                 <div>

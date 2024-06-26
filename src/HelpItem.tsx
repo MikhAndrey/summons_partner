@@ -20,7 +20,8 @@ function HelpItem(props: HelpProps) {
                     { props.header }
                 </div>
                 <div>
-                    <button onClick={ openCloseDetails }
+                    <img onClick={ openCloseDetails }
+                        src={ isDetailsOpen ? './substract_icon.png' : './plus_icon.png' } 
                         className={ `App-help-item-button ${ isDetailsOpen ? 'close-button' : '' }` }
                     />
                 </div>

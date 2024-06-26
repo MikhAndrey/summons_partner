@@ -4,10 +4,12 @@ function StartWork() {
     const GetAppLinksItems: GetAppLinkItemProps[] = [
         {
             id: 1,
+            redirectLink: "https://apps.apple.com/app/summons-partner/id1329409724",
             imageLink: "./app_store_link.png"
         },
         {
-            id: 2, 
+            id: 2,
+            redirectLink: "https://play.google.com/store/apps/details?id=com.summon.summons",
             imageLink: "./google_play_link.png"
         },
     ];
@@ -25,7 +27,7 @@ function StartWork() {
                 Get the App
                 <div className="App-start-work-get-app-links-container">
                     { GetAppLinksItems.map(el => 
-                        <GetAppLinkItem key={ el.id } id={ el.id } imageLink={ el.imageLink }/>
+                        <GetAppLinkItem key={ el.id } id={ el.id } redirectLink={el.redirectLink} imageLink={ el.imageLink }/>
                     ) }
                 </div>
             </div>

@@ -166,6 +166,7 @@
 }
 
 .App-header-menu-start-button {
+  text-decoration: none;
   width: 158px;
   height: 44px;
   padding: 12px;
@@ -363,6 +364,7 @@
 }
 
 .App-main-app-download {
+  text-decoration: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -975,17 +977,15 @@
 }
 
 .App-help-item-button {
+  cursor: pointer;
   border: none;
-  border-radius: 50% 50%;
   height: 20px;
   width: 20px;
-  background-image: url('../public/plus_icon.png');
   margin-top: 5px;
 }
 
 .App-help-item-button.close-button {
   opacity: 30%;
-  background-image: url('../public/subtract_icon.png');
 }
 
 .App-start-work {

@@ -46,7 +46,12 @@ const Header: React.FC<HeaderProps> = ({ isBurgerMenuOpen, setIsBurgerMenuOpen }
                         >Contacts</a>
                     </div>
                     <div>
-                        <button className="App-header-menu-start-button back-orange">Get started free</button>
+                        <a 
+                            role="button" 
+                            target="_blank" 
+                            href="https://apps.apple.com/app/summons-partner/id1329409724" 
+                            className="App-header-menu-start-button back-orange"
+                        >Get started free</a>
                     </div>
                     <BurgerMenu isOpen={isBurgerMenuOpen} setIsOpen={setIsBurgerMenuOpen}/>
                 </div>

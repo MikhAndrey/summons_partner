@@ -1,10 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import {scrollToSection} from "./helpers";
 import BurgerMenu from "./BurgerMenu";
 
-function Header() {
-    const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
-    
+interface HeaderProps {
+    isBurgerMenuOpen: boolean;
+    setIsBurgerMenuOpen: (isBurgerMenuOpen: boolean) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ isBurgerMenuOpen, setIsBurgerMenuOpen }) => {
     return (
         <div>
             {isBurgerMenuOpen && (

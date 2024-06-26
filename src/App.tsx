@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Main from "./Main";
 import HowItWorks from "./HowItWorks";
@@ -12,23 +12,29 @@ import StartWork from './StartWork';
 import Contacts from './Contacts';
 
 function App() {
-  return (
-    <div className="App">
-        <div className="App-main-back back-dark-blue"></div>
-        <Header></Header>
-        <div className="App-container">
-            <Main></Main>
-            <HowItWorks></HowItWorks>
-            <Features></Features>
-            <CommonInfo></CommonInfo>
-            <Reviews></Reviews>
-            <Help/>
-            <StartWork/>
-            <Contacts/>
+    const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);  
+    
+    return (
+        <div className="App">
+            <div className="App-main-back back-dark-blue"></div>
+            <Header isBurgerMenuOpen={isBurgerMenuOpen} setIsBurgerMenuOpen={setIsBurgerMenuOpen}></Header>
+            {!isBurgerMenuOpen && (
+                <div>
+                    <div className="App-container">
+                        <Main></Main>
+                        <HowItWorks></HowItWorks>
+                        <Features></Features>
+                        <CommonInfo></CommonInfo>
+                        <Reviews></Reviews>
+                        <Help/>
+                        <StartWork/>
+                        <Contacts/>
+                    </div>
+                    <Footer/>
+                </div>
+            )}
         </div>
-        <Footer/> 
-    </div>
-  );
+    );
 }
 
 export default App;

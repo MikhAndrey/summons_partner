@@ -12,7 +12,9 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, setIsOpen }) => {
     
     const scrollAndCloseMenu = (event: any, sectionId: string) => {
         setIsOpen(false);
-        scrollToSection(event, sectionId);
+        setTimeout(() => {
+            scrollToSection(event, sectionId);
+        }, 0);
     }
 
     return (

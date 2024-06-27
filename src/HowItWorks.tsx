@@ -13,7 +13,7 @@ function HowItWorks() {
     return (
         <div id="howItWorks">
             <div className="App-howitworks-description-container">
-                <div className="App-howitworks-description-header header-text color-dark-blue">All-in-one solution</div>
+                <div className="App-howitworks-description-header no-wrap header-text color-dark-blue">All-in-one <br/> solution</div>
                 <div className="App-howitworks-description-text description-text color-night-blue">With our app, you can access a comprehensive reference 
                     guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime  Calculator makes 
                     it easy to manage, print and track your overtime hours  with precision and accuracy. Designed 

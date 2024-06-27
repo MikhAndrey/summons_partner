@@ -16,11 +16,12 @@ function HelpItem(props: HelpProps) {
     return (
         <div className="App-help-item color-black">
             <div className="App-help-item-header">
-                <div>
+                <div className="App-help-item-header-text">
                     { props.header }
                 </div>
                 <div>
-                    <button onClick={ openCloseDetails }
+                    <img onClick={ openCloseDetails }
+                        src={ isDetailsOpen ? './substract_icon.png' : './plus_icon.png' } 
                         className={ `App-help-item-button ${ isDetailsOpen ? 'close-button' : '' }` }
                     />
                 </div>

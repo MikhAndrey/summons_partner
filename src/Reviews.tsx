@@ -16,7 +16,7 @@ function Reviews() {
             text: "I have been using this app for over half a year and I can honestly say that this app has everything you need when you are on patrol. Whether is looking up violation codes or how to write a story that spells out the crime, it has everything you need. The overtime add on is worth the extra money. It is very easy to use and has everything you need to stay on top of your money.\n" +
                 "This app is very user friendly and there are no glitches whatsoever. The creator works hard to constantly update and make changes.",
             avatarLink: "./user_avatar2.png"
-        },
+        }
     ]
     
     return (
@@ -25,12 +25,10 @@ function Reviews() {
                 <div className="App-reviews-info">
                     <div className="App-reviews-label">
                         <div>
-                            <div className="header-text">What people say</div>
-                            <div className="header-text">about app</div>
+                            <div className="header-text no-wrap">What people say <br/> about app</div>
                         </div>
                         <div>
-                            <div className="main-label-description">More than 1.2K users have shared</div>
-                            <div className="main-label-description">their experience with our app!</div>
+                            <div className="main-label-description">More than 1.2K users have shared <br/> their experience with our app!</div>
                         </div>
                     </div>
                     <div className="App-reviews-content">

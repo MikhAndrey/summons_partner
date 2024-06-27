@@ -31,13 +31,13 @@ function StartWork() {
                     ) }
                 </div>
             </div>
-            <div className="App-start-work-phone-image-container">
-                <img alt="get-app-phone" className="App-start-work-phone-image image-shadow" src="./get_app_phone.png"/>
-                <img alt="get-app-phone"  className="App-start-work-phone-image-mobile image-shadow" src="./get_app_phone_mobile.png"/>
-            </div>
             <div className="App-start-work-car-image-container">
                 <img alt="start-work-car"  className="App-start-work-car-image" src="./police_car.png"/>
                 <img alt="start-work-car"  className="App-start-work-car-image-mobile" src="./police_car_mobile.png"/>
+            </div>
+            <div className="App-start-work-phone-image-container">
+                <img alt="get-app-phone" className="App-start-work-phone-image image-shadow" src="./get_app_phone.png"/>
+                <img alt="get-app-phone"  className="App-start-work-phone-image-mobile image-shadow" src="./get_app_phone_mobile.png"/>
             </div>
         </div>  
     )

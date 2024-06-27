@@ -6,7 +6,7 @@ function Main() {
             <div className="App-main-label">
                 <div>
                     <div className="App-main-label-primary">
-                        Get the ultimate all-in-one solution
+                        Get the ultimate <br/> all-in-one solution
                     </div>
                 </div>
                 <div className="main-label-description">

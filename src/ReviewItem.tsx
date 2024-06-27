@@ -20,6 +20,7 @@ function ReviewItem(props: ReviewProps) {
             <div className="App-review-text-container">
                 <div className="App-review-text description-text color-night-blue">{props.text}</div>
                 <div className="App-review-text-container-corner"></div>
+                <div className="App-review-text-container-corner-triangle"></div>
             </div>
             <div className="App-review-avatar-wrapper">
                 <img className="App-review-avatar" src={props.avatarLink}/>

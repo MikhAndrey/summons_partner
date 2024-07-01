@@ -648,7 +648,9 @@
 .App-features-label-arrows {
   width: 79px;
   height: 44px;
-  display: flex;
+  /*Temporarly removing the arrows*/
+  display: none;
+  /* display: flex; */
   align-items: center;
   justify-content: space-around;
 }
@@ -1003,6 +1005,8 @@
 }
 
 .App-footer-link {
+  text-decoration: none;
+  color: inherit;
   font-weight: 500;
 }
 

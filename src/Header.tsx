@@ -1,5 +1,6 @@
 import React from "react";
 import {scrollToSection} from "./helpers";
+import { motion } from 'framer-motion';
 import BurgerMenu from "./BurgerMenu";
 
 interface HeaderProps {
@@ -11,12 +12,18 @@ const Header: React.FC<HeaderProps> = ({ isBurgerMenuOpen, setIsBurgerMenuOpen }
     return (
         <div>
             {isBurgerMenuOpen && (
-                <div className="App-header-overlay">
+                <motion.div
+                    className="App-header-overlay"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.2 }}
+                    exit={{ opacity: 0 }}
+                >
                     <div className="App-header-info-overlay">
                         <img className="App-header-logo" src="./summons_partner_logo.png"/>
                         <span className="App-header-name-label">SUMMONS PARTNER+</span>
                     </div>
-                </div>)}
+                </motion.div>)}
             <div className="App-header">
                 <div className="App-header-info">
                     <img className="App-header-logo" src="./summons_partner_logo.png"/>

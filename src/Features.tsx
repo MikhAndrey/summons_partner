@@ -1,5 +1,5 @@
-import React from "react";
 import FeaturesItem, {FeaturesProps} from "./FeaturesItem";
+import { motion } from "framer-motion";
 
 function Features() {
     const featuresItemsContent: FeaturesProps[] = [
@@ -41,7 +41,12 @@ function Features() {
                         <div className="App-icon-wrapper back-orange">
                             <img src="./home.png" className="App-icon"/>
                         </div>
-                        <div className="header-text">Summonses</div>
+                        <motion.div className="header-text"
+                            initial={{ scale: 0.9 }}
+                            whileInView={{ scale: 1 }}
+                        >
+                            Summonses
+                        </motion.div>
                         <div className="description-text App-features-label-description">
                             With our app, you can access a comprehensive reference
                             guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime

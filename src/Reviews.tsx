@@ -1,5 +1,5 @@
-import React from "react";
 import ReviewItem, {ReviewProps} from "./ReviewItem";
+import { motion } from "framer-motion";
 
 function Reviews() {
     const reviewItems: ReviewProps[] = [
@@ -25,7 +25,12 @@ function Reviews() {
                 <div className="App-reviews-info">
                     <div className="App-reviews-label">
                         <div>
-                            <div className="header-text no-wrap">What people say <br/> about app</div>
+                            <motion.div className="header-text no-wrap"
+                                initial={{ scale: 0.9 }}
+                                whileInView={{ scale: 1 }}
+                            >
+                                What people say <br/> about app
+                            </motion.div>
                         </div>
                         <div>
                             <div className="main-label-description">More than 1.2K users have shared <br/> their experience with our app!</div>

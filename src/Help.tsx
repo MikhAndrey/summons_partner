@@ -1,4 +1,5 @@
 import HelpItem, { HelpProps } from "./HelpItem";
+import { motion } from "framer-motion";
 
 function Help() {
     const HelpItemsData : HelpProps[] = [
@@ -70,9 +71,12 @@ function Help() {
 
     return (
         <div className="App-help" id="help">
-            <div className="App-help-header header-text color-dark-blue">
+            <motion.div className="App-help-header header-text color-dark-blue"
+                initial={{ scale: 0.9 }}
+                whileInView={{ scale: 1 }}
+            >
                 How we can help you?
-            </div>
+            </motion.div>
             <div className="App-help-view">
                 { HelpItemsData.map(el => 
                     <HelpItem key={ el.id } 

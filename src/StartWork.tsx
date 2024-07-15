@@ -1,4 +1,5 @@
 import GetAppLinkItem, { GetAppLinkItemProps } from "./GetAppLinkItem";
+import { motion } from "framer-motion";
 
 function StartWork() {
     const GetAppLinksItems: GetAppLinkItemProps[] = [
@@ -16,9 +17,12 @@ function StartWork() {
 
     return (
         <div className="App-start-work back-orange">
-            <div className="App-start-work-header header-text">
+            <motion.div className="App-start-work-header header-text"
+                initial={{ scale: 0.9 }}
+                whileInView={{ scale: 1 }}
+            >
                 Start your work<br/> with us now
-            </div>
+            </motion.div>
             <div className="App-start-work-desciption">
                 Physical space is often conceived in three linear dimensions,
                 although modern physicists usually con

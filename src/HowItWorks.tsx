@@ -1,6 +1,6 @@
 import React from "react";
 import HowItWorksItem, {HowItWorksItemProps} from "./HowItWorksItem";
-
+import { motion } from "framer-motion";
 
 function HowItWorks() {
     const howItWorksContent: HowItWorksItemProps[] = [
@@ -13,7 +13,12 @@ function HowItWorks() {
     return (
         <div id="howItWorks">
             <div className="App-howitworks-description-container">
-                <div className="App-howitworks-description-header no-wrap header-text color-dark-blue">All-in-one <br/> solution</div>
+                <motion.div className="App-howitworks-description-header no-wrap header-text color-dark-blue"
+                    initial={{ scale: 0.9 }}
+                    whileInView={{ scale: 1 }}
+                >
+                    All-in-one <br/> solution
+                </motion.div>
                 <div className="App-howitworks-description-text description-text color-night-blue">With our app, you can access a comprehensive reference 
                     guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime  Calculator makes 
                     it easy to manage, print and track your overtime hours  with precision and accuracy. Designed 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence, motion } from 'framer-motion';
 
 export interface HelpProps {
     id: number,
@@ -21,14 +22,20 @@ function HelpItem(props: HelpProps) {
                 </div>
                 <div>
                     <img onClick={ openCloseDetails }
-                        className={ `App-help-item-button ${ isDetailsOpen ? 'close-button' : '' }` }
+                        className={ `App-help-item-button ${ !isDetailsOpen ? '' : 'close-button' }` }
                     />
                 </div>
             </div>
-            { !isDetailsOpen ? null :
-            <div className="App-help-item-details">
-                { props.details }
-            </div>}
+            <AnimatePresence>
+                { !isDetailsOpen ? null :
+                <motion.div className="App-help-item-details"
+                    initial={{ x: '-100vw' }}
+                    animate={{ x: 0, transition: { type: 'spring', stiffness: 90, damping: 13 } }}
+                    exit={{ opacity: 0, transition: { duration: 0.2 } }}
+                >
+                    { props.details }
+                </motion.div>}
+            </AnimatePresence>
         </div>  
     )
 }

@@ -6,7 +6,7 @@ interface Contact {
 function Contacts() {
     const ContactsData: Contact[] = [
         { id: 1, contact: 'summonspartner@gmail.com' },
-        { id: 2, contact: '+1-394-3439-1435' }
+        // { id: 2, contact: '+1-394-3439-1435' }
     ]
 
     return (

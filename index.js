@@ -216,8 +216,8 @@ const loadHelpItems = () => {
 const loadGetAppItems = () => {
     getAppLinksItems.forEach(el => {
         myDocument('.App-start-work-get-app-links-container').insertAdjacentHTML('beforeend', `
-            <a href="${el.redirectLink}" target="_blank" className="App-start-work-get-app-link-container">
-                <img alt="app-link" className="App-start-work-get-app-link-image" src="${el.imageLink}">
+            <a href="${el.redirectLink}" target="_blank" class="App-start-work-get-app-link-container">
+                <img alt="app-link" class="App-start-work-get-app-link-image" src="${el.imageLink}">
             </a>  
         `);
     });

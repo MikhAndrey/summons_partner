@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/images/summons_partner_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Summons partner</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="App">
+      <div class="App-main-back back-dark-blue"></div>
+      <div>
+        <!-- {isBurgerMenuOpen && ( -->
+        <div class="App-header-overlay">
+          <div class="App-header-info-overlay">
+            <img class="App-header-logo" src="assets/images/summons_partner_logo.png"/>
+            <span class="App-header-name-label">SUMMONS PARTNER+</span>
+          </div>
+        </div>
+            <!-- )} -->
+        <div class="App-header">
+          <div class="App-header-info">
+              <img class="App-header-logo" src="assets/images/summons_partner_logo.png"/>
+              <span class="App-header-name-label">SUMMONS PARTNER+</span>
+          </div>
+          <div class="App-header-menu">
+            <div class="App-header-menu-items">
+              <a href="#howItWorks" class="App-header-menu-item">How it works</a>
+              <a href="#features" class="App-header-menu-item">Features</a>
+              <a href="#reviews" class="App-header-menu-item">Reviews</a>
+              <a href="#help" class="App-header-menu-item">Help</a>
+              <a href="#contacts" class="App-header-menu-item">Contacts</a>
+            </div>
+            <div>
+              <a 
+                role="button" 
+                target="_blank" 
+                href="https://apps.apple.com/app/summons-partner/id1329409724" 
+                class="App-header-menu-start-button back-orange"
+              >Get started free</a>
+            </div>
+            <div class="burger-menu">
+              <button 
+                onclick="toggleMenu"
+                class="burger-menu-button"
+              ></button>
+              <button 
+                onclick="toggleMenu"
+                class="close-menu-button"
+              ></button>
+              <!-- {isOpen && ( -->
+              <div class="burger-menu-items">
+                <a href="#howItWorks" class="burger-menu-item">How it works</a>
+                <a href="#features" class="burger-menu-item">Features</a>
+                <a href="#reviews" class="burger-menu-item">Reviews</a>
+                <a href="#help" class="burger-menu-item">Help</a>
+                <a href="#contacts" class="burger-menu-item">Contacts</a>
+              </div>
+              <!-- )} -->
+            </div>
+          </div>
+      </div>
+    </div>
+      <!-- {!isBurgerMenuOpen && ( -->
+      <div>
+        <div class="App-container">
+            <!-- <Main></Main>
+            <HowItWorks></HowItWorks>
+            <Features></Features>
+            <CommonInfo></CommonInfo>
+            <Reviews></Reviews>
+            <Help/>
+            <StartWork/>
+            <Contacts/> -->
+        </div>
+        <div class="App-footer">
+          <div class="App-footer-copyright">
+            © 2020-2024 n.u. logistics - All Rights Reserved
+          </div>
+          <div class="App-footer-links-container">
+            <a target="_blank" href="https://arttica.is/terms" class="App-footer-link">Terms of use</a>
+            <a target="_blank" href="https://arttica.is/terms" class="App-footer-link">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+      <!-- )} -->
+    </div>
+  </body>
+  <script src="assets/js/srcipt.js"></script>
+</html>

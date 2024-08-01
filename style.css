@@ -783,12 +783,12 @@ code {
   height: 20px;
   width: 20px;
   margin-top: 5px;
-  content: url('../public/plus_icon.png');
+  content: url('./assets/images/plus_icon.png');
 }
 
 .App-help-item-button.close-button {
   opacity: 30%;
-  content: url('../public/substract_icon.png');
+  content: url('./assets/images/substract_icon.png');
 }
 
 .App-start-work {

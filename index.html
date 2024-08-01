@@ -16,14 +16,12 @@
     <div class="App">
       <div class="App-main-back back-dark-blue"></div>
       <div>
-        <!-- {isBurgerMenuOpen && ( -->
         <div class="App-header-overlay invisible">
           <div class="App-header-info-overlay">
             <img class="App-header-logo" src="assets/images/summons_partner_logo.png"/>
             <span class="App-header-name-label">SUMMONS PARTNER+</span>
           </div>
         </div>
-            <!-- )} -->
         <div class="App-header">
           <div class="App-header-info">
               <img class="App-header-logo" src="assets/images/summons_partner_logo.png"/>
@@ -48,7 +46,6 @@
             <div class="burger-menu">
               <button class="burger-menu-button"></button>
               <button class="close-menu-button invisible"w></button>
-              <!-- {isOpen && ( -->
               <div class="burger-menu-items invisible">
                 <a href="#howItWorks" class="burger-menu-item">How it works</a>
                 <a href="#features" class="burger-menu-item">Features</a>
@@ -56,12 +53,10 @@
                 <a href="#help" class="burger-menu-item">Help</a>
                 <a href="#contacts" class="burger-menu-item">Contacts</a>
               </div>
-              <!-- )} -->
             </div>
           </div>
       </div>
     </div>
-      <!-- {!isBurgerMenuOpen && ( -->
     <div class="App-content-area">
       <div class="App-container">
         <div class="App-main-wrapper">
@@ -145,11 +140,94 @@
             <div class="App-features-items-container"></div>
         </div>
       </div>
-          <!--<CommonInfo></CommonInfo>
-          <Reviews></Reviews>
-          <Help/>
-          <StartWork/>
-          <Contacts/> -->
+      <div class="App-common-info-container-wrapper">
+        <div class="App-common-info-container">
+            <div>
+                <div class="header-text App-common-info-header color-dark-blue">Get the ultimate all-in-one solution</div>
+            </div>
+            <div class="description-text App-common-info-description color-night-blue">
+                With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. 
+                Additionally, our advanced Overtime  Calculator makes it easy to manage, print and track your 
+                overtime hours  with precision and accuracy. Designed specifically for NYPD officers.
+            </div>
+            <div class="App-common-info-statistics-container">
+                <div class="App-common-info-statistics-item">
+                    <div class="header-text color-dark-blue">130K+</div>
+                    <div class="description-text color-orange">Downloads</div>
+                </div>
+                <div class="App-common-info-statistics-item">
+                    <div class="header-text color-dark-blue">1.2K+</div>
+                    <div class="description-text color-orange">Positive feedback</div>
+                </div>
+                <div class="App-common-info-statistics-item">
+                    <div class="header-text color-dark-blue">4.9</div>
+                    <div class="Adescription-text color-orange">Stars rating</div>
+                </div>
+                <div class="App-common-info-statistics-item">
+                    <div class="header-text color-dark-blue">10+</div>
+                    <div class="description-text color-orange">Years on market</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="reviews">
+        <div class="App-reviews-container back-dark-blue">
+            <div class="App-reviews-info">
+                <div class="App-reviews-label">
+                    <div>
+                        <div class="header-text no-wrap">
+                            What people say <br/> about app
+                        </div>
+                    </div>
+                    <div>
+                        <div class="main-label-description">More than 1.2K users have shared <br/> their experience with our app!</div>
+                    </div>
+                </div>
+                <div class="App-reviews-content"></div>
+                <div class="App-reviews-button">
+                    <span class="App-ref-link-label color-orange">Show more</span>
+                    <img class="App-ref-link-icon color-orange" src="./assets/images/ref_link_icon.png" alt="More"/>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="App-help" id="help">
+        <div class="App-help-header header-text color-dark-blue">
+            How we can help you?
+        </div>
+        <div class="App-help-view"></div>
+      </div>
+      <div class="App-start-work back-orange">
+        <div class="App-start-work-header header-text">
+            Start your work<br/> with us now
+        </div>
+        <div class="App-start-work-desciption">
+            Physical space is often conceived in three linear dimensions,
+            although modern physicists usually con
+        </div>
+        <div class="App-start-work-get-app">
+            Get the App
+            <div class="App-start-work-get-app-links-container"></div>
+        </div>
+        <div class="App-start-work-car-image-container">
+            <img alt="start-work-car" class="App-start-work-car-image" src="./assets/images/police_car.png"/>
+            <img alt="start-work-car" class="App-start-work-car-image-mobile" src="./assets/images/police_car_mobile.png"/>
+        </div>
+        <div class="App-start-work-phone-image-container">
+            <img alt="get-app-phone" class="App-start-work-phone-image image-shadow" src="./assets/images/get_app_phone.png"/>
+            <img alt="get-app-phone" class="App-start-work-phone-image-mobile image-shadow" src="./assets/images/get_app_phone_mobile.png"/>
+        </div>
+    </div>  
+      <div class="App-contacts" id="contacts">
+        <div class="App-contacts-header color-night-blue">
+          Contact us
+        </div>
+        <div class="App-contacts-links-container">
+          <div class="App-contacts-link color-dark-blue">
+            summonspartner@gmail.com
+          </div>
+        </div>
+      </div>
       </div>
       <div class="App-footer">
         <div class="App-footer-copyright">
@@ -161,7 +239,6 @@
         </div>
       </div>
     </div>
-      <!-- )} -->
     </div>
     <script src="assets/js/index.js"></script>
   </body>

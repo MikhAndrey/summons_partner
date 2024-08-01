@@ -7,6 +7,23 @@ const howItWorksContent = [
     {id: 4, name: "Department Phone Book", description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime "}
 ];
 
+const reviewItems = [
+    {
+        id: 1,
+        rating: 5,
+        text: "If you’re on patrol, you need this app. It includes all the violations needed for all the summonses, and you can save the ones you use the most for easier access. Furthermore, it has TPO narratives when are very important to have, especially for those who are just starting their career. The reference section is useful.\n" +
+            "You can have your rdo calendar, pay day, and vacation picks all within the same app too. My most favorite, is definitely the OT calculator, this app makes it very easy to keep track of your ot in a very organized manner.",
+        avatarLink: "./user_avatar1.png"
+    },
+    {
+        id: 2,
+        rating: 5,
+        text: "I have been using this app for over half a year and I can honestly say that this app has everything you need when you are on patrol. Whether is looking up violation codes or how to write a story that spells out the crime, it has everything you need. The overtime add on is worth the extra money. It is very easy to use and has everything you need to stay on top of your money.\n" +
+            "This app is very user friendly and there are no glitches whatsoever. The creator works hard to constantly update and make changes.",
+        avatarLink: "./user_avatar2.png"
+    }
+]
+
 const featuresItemsContent = [
     {
         id: 1,
@@ -26,6 +43,86 @@ const featuresItemsContent = [
         description: "With our app, you can access a comprehensive reference guide to THE JOB,  summonses and NYS Penal Law. Additionally, our advanced Overtime ",
         imageLink: "./mobile_screen_overtime_history.png"
     }
+];
+
+const helpItemsData = [
+    {
+        id: 1, 
+        header: 'Do I need to purchase the app again on the Apple App Store if I bought it on Google Play?',
+        details: `If you originally purchased the app on Google Play, it’s important to note that the Apple App 
+        Store and Google Play are entirely separate platforms. This means that, unfortunately, you will need to make 
+        a separate purchase if you wish to use the app on an iOS device via the Apple App Store, and vice versa. 
+        Cross-platform payments or shared purchases are not supported by Apple or Google.`
+    },
+    {
+        id: 2, 
+        header: 'What is the cost of your application?',
+        details: `We provide two choices for our application. You can opt for a yearly subscription priced at $9.99, 
+        which grants access to all features. Alternatively, there is a one-time payment of $49.99, which unlocks 
+        both the current and any future features permanently.`
+    },
+    {
+        id: 3, 
+        header: 'Is there a free trial version available?',
+        details: `Yes, you can enjoy a free 30-day trial when you subscribe. You can cancel anytime if you're not 
+        satisfied with our app.`
+    },
+    {
+        id: 4, 
+        header: 'What features does your app offer?',
+        details: `Our app is an all-in-one solution for your patrol needs. It includes features like reference 
+        guide to Summonses, Precinct Maps, TPO guide, RDO Calendar, Overtime Calculator, and the complete Penal Law. 
+        We're continually working to add even more valuable features.`
+    },
+    {
+        id: 5, 
+        header: 'I have an idea or a problem. How can I get in touch with someone to discuss it?',
+        details: `We're committed to providing you with a seamless experience. We thrive on your valuable input and 
+        are eager to hear your suggestions. Don't hesitate to connect with us right from the app settings, or drop 
+        us an email at summonspartner@gmail.com. Your feedback helps us keep the app at its best!`
+    },
+    {
+        id: 6, 
+        header: 'When will I be charged for my subscription?',
+        details: `You will be charged at the end the trial, unless you cancel your subscription.`
+    },
+    {
+        id: 7, 
+        header: 'How do I cancel my subscription?',
+        details: 'Cancel at any time from the Settings tab and then the Manage Subscription section.' 
+    },
+    {
+        id: 8, 
+        header: 'Will my subscription renew automatically?',
+        details: `Yes, subscriptions automatically renews unless cancelled.`
+    },
+    {
+        id: 9,
+        header: 'Are the new features available for all devices?',
+        details: `Due to a higher level of interest and demand on the iOS platform, it often receives priority for 
+        updates and new features. However, we still aim to support and improve the Android experience. Please note 
+        that while we aim to bring updates to Android devices, it may take some time for these updates to become 
+        available.`
+    },
+    {
+        id: 10,
+        header: 'Can I get a refund?',
+        details: `Since payments are handled by Apple, all refunds are also handled by them. You need to contact 
+        Apple's support within 14 days of your purchase.`
+    },
+];
+
+const getAppLinksItems = [
+    {
+        id: 1,
+        redirectLink: "https://apps.apple.com/app/summons-partner/id1329409724",
+        imageLink: "./assets/images/app_store_link.png"
+    },
+    {
+        id: 2,
+        redirectLink: "https://play.google.com/store/apps/details?id=com.summon.summons",
+        imageLink: "./assets/images/google_play_link.png"
+    },
 ];
 
 const loadHowItWorks = () => {
@@ -66,10 +163,73 @@ const loadFeatures = () => {
     });
 }
 
+const loadRewiews = () => {
+    reviewItems.forEach(el => {
+        const stars = [];
+        for (let i = 0; i < el.rating; i++) {
+            stars.push('<img src="./assets/images/rating_star.png" class="App-review-rating-star"/>');
+        }
+
+        myDocument('.App-reviews-content').insertAdjacentHTML('beforeend', `
+            <div class="App-review-item">
+                <div class="App-review-rating-container back-orange">
+                    ${stars}
+                </div>
+                <div class="App-review-text-container">
+                    <div class="App-review-text description-text color-night-blue">${el.text}</div>
+                    <div class="App-review-text-container-corner"></div>
+                    <div class="App-review-text-container-corner-triangle"></div>
+                </div>
+                <div class="App-review-avatar-wrapper">
+                    <img class="App-review-avatar" src="./assets/images/${el.avatarLink}"/>
+                </div>
+            </div>
+        `);
+    });
+}
+
+const loadHelpItems = () => {
+    helpItemsData.forEach(el => {
+        myDocument('.App-help-view').insertAdjacentHTML('beforeend', `
+            <div class="App-help-item color-black">
+            <div class="App-help-item-header">
+                <div class="App-help-item-header-text">
+                    ${ el.header }
+                </div>
+                <div>
+                    <img id="App-help-item-button-${el.id}" class="App-help-item-button">
+                </div>
+            </div>
+            <div id="App-help-item-details-${el.id}" class="App-help-item-details invisible">
+                ${ el.details }
+            </div>
+        </div> 
+        `);
+
+        myDocument(`#App-help-item-button-${el.id}`).addEventListener('click', () => {
+            myDocument(`#App-help-item-button-${el.id}`).classList.toggle('close-button');
+            myDocument(`#App-help-item-details-${el.id}`).classList.toggle('invisible');
+        });
+    });
+}
+
+const loadGetAppItems = () => {
+    getAppLinksItems.forEach(el => {
+        myDocument('.App-start-work-get-app-links-container').insertAdjacentHTML('beforeend', `
+            <a href="${el.redirectLink}" target="_blank" className="App-start-work-get-app-link-container">
+                <img alt="app-link" className="App-start-work-get-app-link-image" src="${el.imageLink}">
+            </a>  
+        `);
+    });
+}
+
 window.addEventListener('load', () => {
     loadHowItWorks();
     loadFeatures();
-});
+    loadRewiews();
+    loadHelpItems();
+    loadGetAppItems();
+}); 
 
 myDocument('.burger-menu-button').addEventListener('click', () => {
     myDocument('.App-content-area').classList.add('invisible');

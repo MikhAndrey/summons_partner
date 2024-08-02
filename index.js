@@ -173,7 +173,7 @@ const loadRewiews = () => {
         myDocument('.App-reviews-content').insertAdjacentHTML('beforeend', `
             <div class="App-review-item">
                 <div class="App-review-rating-container back-orange">
-                    ${stars}
+                    ${stars.join(' ')}
                 </div>
                 <div class="App-review-text-container">
                     <div class="App-review-text description-text color-night-blue">${el.text}</div>
@@ -223,26 +223,41 @@ const loadGetAppItems = () => {
     });
 }
 
+const openBurgerMenu = () => {
+    myDocument('.App-content-area').classList.add('invisible');
+    myDocument('.App-header-overlay').classList.remove('invisible');
+    myDocument('.burger-menu-items').classList.remove('invisible');
+    myDocument('.burger-menu-button').classList.add('invisible');
+    myDocument('.close-menu-button').classList.remove('invisible');
+}
+
+const closeBurgerMenu = () => {    
+    myDocument('.App-content-area').classList.remove('invisible');
+    myDocument('.App-header-overlay').classList.add('invisible');
+    myDocument('.burger-menu-items').classList.add('invisible');
+    myDocument('.burger-menu-button').classList.remove('invisible');
+    myDocument('.close-menu-button').classList.add('invisible');
+}
+
+const addBurgerMenuListeners = () => {    
+    document.querySelectorAll('.burger-menu-item').forEach(el => {        
+        el.addEventListener('click', closeBurgerMenu);
+    });
+}
+
+const addButtonListeners = () => {
+    myDocument('.burger-menu-button').addEventListener('click', openBurgerMenu);
+    myDocument('.close-menu-button').addEventListener('click', closeBurgerMenu);
+}
+
 window.addEventListener('load', () => {
     loadHowItWorks();
     loadFeatures();
     loadRewiews();
     loadHelpItems();
     loadGetAppItems();
+    addBurgerMenuListeners();
+    addButtonListeners();
 }); 
 
-myDocument('.burger-menu-button').addEventListener('click', () => {
-    myDocument('.App-content-area').classList.add('invisible');
-    myDocument('.App-header-overlay').classList.remove('invisible');
-    myDocument('.burger-menu-items').classList.remove('invisible');
-    myDocument('.burger-menu-button').classList.add('invisible');
-    myDocument('.close-menu-button').classList.remove('invisible');
-});
 
-myDocument('.close-menu-button').addEventListener('click', () => {
-    myDocument('.App-content-area').classList.remove('invisible');
-    myDocument('.App-header-overlay').classList.add('invisible');
-    myDocument('.burger-menu-items').classList.add('invisible');
-    myDocument('.burger-menu-button').classList.remove('invisible');
-    myDocument('.close-menu-button').classList.add('invisible');
-});

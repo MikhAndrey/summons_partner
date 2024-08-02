@@ -10,7 +10,7 @@
 a:-webkit-any-link {
   color: inherit;
   text-decoration: inherit;
-  cursor: auto;
+  cursor: pointer;
 }
 
 body {

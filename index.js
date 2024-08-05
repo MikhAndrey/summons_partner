@@ -13,7 +13,7 @@ const reviewItems = [
         rating: 5,
         text: "If you’re on patrol, you need this app. It includes all the violations needed for all the summonses, and you can save the ones you use the most for easier access. Furthermore, it has TPO narratives when are very important to have, especially for those who are just starting their career. The reference section is useful.\n" +
             "You can have your rdo calendar, pay day, and vacation picks all within the same app too. My most favorite, is definitely the OT calculator, this app makes it very easy to keep track of your ot in a very organized manner.",
-        avatarLink: "./user_avatar1.png"
+        avatarLink: "./user_avatar1.jpg"
     },
     {
         id: 2,
